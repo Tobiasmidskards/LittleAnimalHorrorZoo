@@ -1,2 +1,3 @@
 # LittleAnimalHorrorZoo
-Project
+
+Munir, Tobias, Frederik and Christoffer.
