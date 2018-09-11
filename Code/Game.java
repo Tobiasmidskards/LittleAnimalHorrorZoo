@@ -15,14 +15,16 @@ public class Game {
     public void move() {
       rabbit.moveRabbit(randomInt(),randomInt());
       snake.moveSnake(randomInt(),randomInt());
-      if (collisionDetection()) {
-        gameOver = true;
-      }
     }
 
     public void iterate() {
       while (!gameOver) {
         move();
+
+        if (collisionDetection()) {
+          gameOver = true;
+        }
+        
       }
       gameOver();
     }

@@ -5,7 +5,7 @@ public class Snake{
   public Snake(){
     positionX = 0;
     positionY = 0;
-    message = "I am the evil snake, I'm now standing on the square ";
+    message = "I am the evil snake, I'm now standing on the square\t";
   }
 
   public void tell() {

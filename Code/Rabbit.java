@@ -5,7 +5,7 @@ public class Rabbit{
   public Rabbit(){
     positionX = 9;
     positionY = 9;
-    message = "I am the nice rabbit, I'm now standing on the square ";
+    message = "I am the nice rabbit, I'm now standing on the square\t";
   }
 
   public void tell() {
