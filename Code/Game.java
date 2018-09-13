@@ -5,6 +5,17 @@ public class Game {
     Snake snake = new Snake();
     Rabbit rabbit = new Rabbit();
 
+    public void iterate() {
+      while (!gameOver) {
+        iterations++;
+        updateGameLogic();
+        if (collisionDetection()) {
+          gameOver = true;
+        }
+      }
+      gameOver();
+    }
+
     public boolean collisionDetection() {
       if (snake.getX() == rabbit.getX() && snake.getY() == rabbit.getY()) {
         return true;
@@ -12,26 +23,16 @@ public class Game {
       return false;
     }
 
-    public void move() {
+    public void updateGameLogic() {
       rabbit.moveRabbit(randomInt(),randomInt());
       snake.moveSnake(randomInt(),randomInt());
-    }
-
-    public void iterate() {
-      while (!gameOver) {
-        move();
-
-        if (collisionDetection()) {
-          gameOver = true;
-        }
-        
-      }
-      gameOver();
     }
 
     public void gameOver() {
         rabbit.tellEndGame();
         snake.tellEndGame();
+
+        System.out.println("\nSimulated: " + iterations + " iterations.");
     }
 
     public int randomInt(){

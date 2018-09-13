@@ -16,7 +16,7 @@ public class Rabbit{
     System.out.println("Noooo Please don't eat me!!");
   }
 
-  public void moveRabbit(int x, int y) {
+  public void move(int x, int y) {
     this.positionX = x;
     this.positionY = y;
     tell();

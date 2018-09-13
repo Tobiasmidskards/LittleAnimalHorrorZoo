@@ -17,7 +17,7 @@ public class Snake{
   }
 
 
-  public void moveSnake(int x, int y) {
+  public void move(int x, int y) {
     this.positionX = x;
     this.positionY = y;
     tell();
