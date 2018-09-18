@@ -24,8 +24,8 @@ public class Game {
     }
 
     public void updateGameLogic() {
-      rabbit.moveRabbit(randomInt(),randomInt());
-      snake.moveSnake(randomInt(),randomInt());
+      rabbit.move(randomInt(),randomInt());
+      snake.move(randomInt(),randomInt());
     }
 
     public void gameOver() {
